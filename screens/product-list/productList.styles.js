@@ -6,12 +6,12 @@ export default StyleSheet.create(
         container: {
             flex: 1,
             width: '100%',
-            backgroundColor: '#fff',
+            backgroundColor: '#f5f5f5',
         },
         header_container: {
             width: '100%',
             marginTop: 50,
-            backgroundColor: '#fff'
+            backgroundColor: '#f5f5f5'
         },
         header: {
             flexDirection: "row",
@@ -20,6 +20,7 @@ export default StyleSheet.create(
         },
         product_list: {
          marginTop: 20,
+         flex:1,
          marginLeft: 20,
          justifyContent:"center"
         },
@@ -31,12 +32,13 @@ export default StyleSheet.create(
             borderRadius: 30
         },
         input: {
-          height: 30,
+          height: 35,
           borderWidth: 1,
           borderColor: '#ccc',
           padding: 8,
           color: 'black',
-          borderRadius: 8,
+          backgroundColor:"white",
+          borderRadius: 10,
           flex: 1,
           marginRight: 20
         },
@@ -75,12 +77,20 @@ export default StyleSheet.create(
             height: 170,
             borderRadius: 20,
             marginBottom: 10,
-            backgroundColor: "#cce"
+            backgroundColor: "#cce",
+            shadowColor: "#475050",
+            shadowOffset:{
+                width: 0,
+                height: 9,
+            },
+            shadowOpacity:0.22,
+            shadowRadius: 9.22,
+            elevation: 12
         },
         product_card_content:{
            width: 142,
            height: 142,
-           backgroundColor: '#fff'
+           justifyContent: 'space-between'
         },
         card_background_cover:{
             borderRadius:20,
@@ -88,6 +98,29 @@ export default StyleSheet.create(
             width: 170,
             justifyContent:"center",
             alignItems: 'center'
+        },
+        product_header:{
+            flexDirection:"row",
+            justifyContent: 'flex-end'
+        }
+        ,
+        addcart:{
+            marginLeft: 10
+        },
+        product_name:{
+            color: 'white'
+        }
+        ,
+        product_discription:{
+            flexDirection:"row"
+        },
+        product_rate:{
+            flexDirection: "row",
+            marginLeft: 10
+        },
+        sort_icon:{
+            justifyContent:"center",
+            alignContent: "center",
         }
     }
 )

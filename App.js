@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import ProductList from './screens/product-list/productList';
+import GreenScreen from './screens/grid/gridscreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
-     <ProductList />
+    < GreenScreen />
       <StatusBar style="auto" />
     </View>
   );
@@ -14,7 +14,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    width: '100%',
+    backgroundColor: '#e5e5e5',
     alignItems: 'center',
     justifyContent: 'center',
   },
